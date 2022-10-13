@@ -35,7 +35,6 @@ public class UserServiceImp implements UserService {
 
 			HttpSession session = request.getSession();
 			User user1 = this.userRepository.findByUserEmailAndUserPassword(user.getUserEmail(), user.getUserPassword());
-                 System.out.println("user1--->"+user1);
 				if (user1 != null) {
 			session.setAttribute("userId", user1.getId());
 				session.setAttribute("userName", user1.getUserName());

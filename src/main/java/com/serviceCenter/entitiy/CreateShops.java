@@ -23,6 +23,7 @@ public class CreateShops {
 	private User ownerId;
 	
 	private String shopImage;
+	
 	public int getId() {
 		return id;
 	}
@@ -65,6 +66,4 @@ public class CreateShops {
 		return "CreateShops [id=" + id + ", shopName=" + shopName + ", address=" + address + ", location=" + location
 				+ ", ownerId=" + ownerId + ", shopImage=" + shopImage + "]";
 	}
-	
-	
 }
